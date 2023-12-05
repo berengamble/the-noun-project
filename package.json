@@ -1,6 +1,6 @@
 {
   "name": "the-noun-project-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js wrapper for The Noun Project's V2 API. Based heavily on Ross Hettel's V1 wrapper.",
   "main": "nounproject.js",
   "scripts": {

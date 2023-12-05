@@ -1,4 +1,4 @@
-# The Noun Project
+# The Noun Project - V2 API Wrapper
 
 [![npm version](https://badge.fury.io/js/the-noun-project.svg)](http://badge.fury.io/js/the-noun-project)
 [![Build Status](https://travis-ci.org/rosshettel/the-noun-project.svg?branch=master)](https://travis-ci.org/rosshettel/the-noun-project)
