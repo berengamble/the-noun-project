@@ -1,5 +1,5 @@
 {
-  "name": "the-noun-project",
+  "name": "the-noun-project-v2",
   "version": "1.0.0",
   "description": "Node.js wrapper for The Noun Project's V2 API. Based heavily on Ross Hettel's V1 wrapper.",
   "main": "nounproject.js",
@@ -18,7 +18,7 @@
   "author": "Beren Gamble",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/berengamble/the-noun-project/issues"
+    "url": "https://github.com/berengamble/the-noun-project-v2/issues"
   },
   "homepage": "https://github.com/berengamble/the-noun-project-v2",
   "dependencies": {
