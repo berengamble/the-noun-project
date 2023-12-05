@@ -1,28 +1,28 @@
 {
   "name": "the-noun-project",
-  "version": "2.0.2",
-  "description": "Node.js wrapper for The Noun Project's API",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for The Noun Project's V2 API. Based heavily on Ross Hettel's V1 wrapper.",
   "main": "nounproject.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rosshettel/the-noun-project"
+    "url": "https://github.com/berengamble/the-noun-project-v2"
   },
   "keywords": [
     "noun",
     "project",
     "api"
   ],
-  "author": "Ross Hettel",
+  "author": "Beren Gamble",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rosshettel/the-noun-project/issues"
+    "url": "https://github.com/berengamble/the-noun-project/issues"
   },
-  "homepage": "https://github.com/rosshettel/the-noun-project",
+  "homepage": "https://github.com/berengamble/the-noun-project-v2",
   "dependencies": {
-    "mocha": "^5.2.0",
-    "request": "^2.88.0"
+    "mocha": "^10.2.0",
+    "oauth": "^0.10.0"
   }
 }
