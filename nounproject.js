@@ -16,7 +16,6 @@ var Client = (module.exports = function (config) {
     ),
     self = this;
 
-
   //icon : Operations on icon endpoints
   this.getIconById = function (id, options, callback) {
     var path = "/icon/" + id;
@@ -44,15 +43,13 @@ var Client = (module.exports = function (config) {
       callback = options;
       options = {};
     }
-    options.query = term;
+    options.query = term.replace(" ", "-"); // make searches with spaces to work
     if (options.limit_to_public_domain === true) {
       options.limit_to_public_domain = "1";
     }
 
     self.get(path, options, callback);
   };
-
-  
 
   //oauth : Operations on oauth endpoints
   this.getUsage = function (callback) {
@@ -71,7 +68,11 @@ var Client = (module.exports = function (config) {
 
     oauth.get(encodeURI(url), null, null, function (err, data, res) {
       if (err) {
-        callback(new Error("Calling Noun Project API: " + url + " " + JSON.stringify(err)));
+        callback(
+          new Error(
+            "Calling Noun Project API: " + url + " " + JSON.stringify(err)
+          )
+        );
       } else if (res.statusCode !== 200) {
         callback(res.statusCode + " HTTP response code");
       } else {
